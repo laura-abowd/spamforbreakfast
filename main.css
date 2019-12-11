@@ -1,0 +1,45 @@
+.container-header {
+  display: grid;
+  background-color: yellow;
+  grid-template-columns: 1fr 2fr;
+}
+
+.project-title {
+  background-color: pink;
+}
+
+.project-container {
+  display: grid;
+  background-color: gray;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2;
+}
+
+.project-japan-cycle {
+  background-color: red;
+}
+
+.project-classy {
+  background-color: purple;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+
+}
+
+.project-active-social {
+  background-color: blue;
+}
+
+.about-me-title {
+  background-color: orange;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-me {
+  background-color: green;
+}
