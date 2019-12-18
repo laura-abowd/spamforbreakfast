@@ -1,45 +1,67 @@
-.container-header {
-  display: grid;
-  background-color: yellow;
-  grid-template-columns: 1fr 2fr;
+
+body {
+  background-color: rgba(249, 125, 122, 70%);
 }
 
-.project-title {
-  background-color: pink;
+.container {
+  /*height: 100vh;
+  position: relative;*/
+   /* display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+.container-header {
+/*  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-header {
+  margin: 0;
+
+}
+.links-container {
+
+}
+
+ul {
+  left: 20%;
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+
+/*.container-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .project-container {
   display: grid;
-  background-color: gray;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 2;
 }
 
-.project-japan-cycle {
-  background-color: red;
-}
-
 .project-classy {
-  background-color: purple;
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: span 2;
-
-}
-
-.project-active-social {
-  background-color: blue;
-}
-
-.about-me-title {
-  background-color: orange;
 }
 
 .about-me-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-.contact-me {
-
-}
+*/
