@@ -1,67 +1,73 @@
-
-body {
-  background-color: rgba(249, 125, 122, 70%);
+:root {
+  --primary: #001640;
+  --primary-accent:  #FD96A0;
+  --base:  'Open Sans', sans-serif;
+  --header: 'Montserrat', sans-serif;
 }
 
-.container {
-  /*height: 100vh;
-  position: relative;*/
-   /* display: flex;
-  align-items: center;
-  justify-content: center;*/
+html,
+body {
+  font-family: var(--base);
+  color: var(--primary);
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header);
+}
+
+.side-menu {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+.side-menu a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--primary);
+  display: block;
+}
+
+.menu-links {
+  padding-top: 40px;
+}
+
+.side-menu a:hover {
+  color: var(--primary-accent);
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
 }
 
 .container-header {
-/*  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.text-header {
-  margin: 0;
-
-}
-.links-container {
-
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
 }
 
-ul {
-  left: 20%;
-  font-size: 32px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-  padding-inline-start: 0;
-  margin: 0;
+.container-about-me {
+  margin-top: 100px;
+}
+.projects-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-
-/*.container-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+@media screen and (max-height: 450px) {
+  .side-menu {padding-top: 15px;}
+  .side-menu a {font-size: 18px;}
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2;
-}
-
-.project-classy {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-}
-
-.about-me-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-*/
