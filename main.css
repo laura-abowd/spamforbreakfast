@@ -2,8 +2,8 @@
   --background-color: #FFF5ED;
   --primary: #001640;
   --primary-accent:  #FD96A0;
-  --base:  'Open Sans', sans-serif;
-  --header: 'Abril Fatface', cursive;
+  --base:  'Lora', serif;
+  --header: 'Arbutus Slab', serif;
 }
 
 html,
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 56px;
 }
 /*.carousel-inner > .item > img {
   width: 400px;
@@ -89,15 +89,31 @@ h2 {
   margin: 0;
 }
 
-/*image carousel*/
+.project-container  {
+/*  display: flex;
+  justify-content: center;*/
+  display: grid;
+  grid-template-columns: repeat(5, auto [col-start]);
+  grid-column-gap: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.project-information {
+  width: 100%;
+  grid-column-start: span 2;
+ /* justify-content: center;*/
+  align-items: center;
+  align-self: center;
+}
+
 .project-card {
-  text-align: center;
+   width: 100%;
+  grid-column-start: span 3;
 }
 
 .carousel-container {
   background-color: black;
-  width: 50%;
-  display: inline-block;
 }
 
 .project-details {
@@ -121,6 +137,6 @@ h2 {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  background-color: yellow;
+  background-color:  var(--primary-accent);
 }
 
