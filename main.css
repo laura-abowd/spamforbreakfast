@@ -1,15 +1,15 @@
 :root {
   --background-color: #FFF5ED;
-  --primary: #001640;
-  --primary-accent:  #FD96A0;
+  --blue-primary: #001640;
+  --pink-accent:  #FD96A0;
   --base:  'Lora', serif;
-  --header: 'Arbutus Slab', serif;
+  --header: 'Playfair Display', serif;
 }
 
 html,
 body {
   font-family: var(--base);
-  color: var(--primary);
+  color: var(--blue-primary);
   margin: 0;
   width: 100%;
   scroll-behavior: smooth;
@@ -22,16 +22,40 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--header);
-  color: var(--primary);
+  color: var(--blue-primary);
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 64px;
 }
-/*.carousel-inner > .item > img {
-  width: 400px;
-  height:360px;
-}*/
+
+.p-bold-text {
+  font-weight: bold;
+  font-size: 24px;
+}
+.color-separator {
+  color: var(--pink-accent);
+}
+
+.hero-image {
+  max-width: 800px;
+  width: 70%;
+}
+
+.hero-image svg {
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+path.steam-animation {
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
 
 .main-wrapper {
   max-width: 940px;
@@ -45,6 +69,7 @@ h1 {
   position: fixed;
   height: 100vh;
   top: 0;
+  padding-bottom: 50px;
   left: 0px;
   width: 100%;
   z-index: -1;
@@ -72,10 +97,13 @@ h2 {
 }
 
 .content-container {
-  margin-top: 80vh;
+  margin-top: 90vh;
   padding: 5em 2.5em 8em 2.5em;
   padding-bottom: 2.5rem;
   background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 4px 108px
+    rgba(253, 150, 160, 0.15);
 }
 
 .body-container {
@@ -83,7 +111,7 @@ h2 {
 }
 
 .text-6 {
-  color: var(--primary-accent);
+  color: var(--pink-accent);
   font-weight: bold;
   font-size: 24px;
   margin: 0;
@@ -118,7 +146,7 @@ h2 {
 
 .project-details {
   text-decoration: underline;
-  text-decoration-color: var(--primary-accent);
+  text-decoration-color: var(--pink-accent);
 }
 
 .project-details-container {
@@ -137,6 +165,12 @@ h2 {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  background-color:  var(--primary-accent);
+  background-color:  var(--pink-accent);
 }
 
+/*Phone styles*/
+@media (max-width: 450px) {
+  .hero-image {
+    width: 90%;
+  }
+}
