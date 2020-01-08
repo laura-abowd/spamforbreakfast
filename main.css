@@ -78,7 +78,7 @@ a:hover {
   letter-spacing: 2px;
 }
 
-.color-separator {
+.line-separator {
   color: var(--pink-accent);
 }
 
@@ -284,5 +284,9 @@ footer {
 
   .project-card {
     width: 80%;
+  }
+
+  span.line-separator {
+      display: none;
   }
 }
