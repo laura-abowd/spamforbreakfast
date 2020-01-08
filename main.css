@@ -285,8 +285,19 @@ footer {
   .project-card {
     width: 80%;
   }
+/*
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  span.svg {
+    display: inline-flex;
+  }
+  a {
+    display: inline-flex;
+  }*/
 
-  span.line-separator {
+  span.footer-line-separator {
       display: none;
   }
 }
