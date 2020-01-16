@@ -38,9 +38,9 @@ h2 {
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 32px;
   font-family: var(--base);
-
+  letter-spacing: -1.5px;
 }
 
 a {
@@ -223,8 +223,10 @@ path.arrow-down {
 }
 
 .project-details {
-  text-decoration: underline;
-  text-decoration-color: var(--pink-accent);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  /*text-decoration: underline;
+  text-decoration-color: var(--pink-accent);*/
 }
 
 .project-details-container {
@@ -294,10 +296,6 @@ footer {
     display: inline-flex;
     margin-top: 12px;
   }
-  /*a {
-    display: inline-flex;
-  }*/
-
   .line-footer {
       display: none;
   }
