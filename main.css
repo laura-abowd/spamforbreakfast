@@ -273,6 +273,10 @@ footer {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+
+  .content-container {
+    border-radius: 0px;
+  }
 }
 
 /*Phone styles*/
@@ -285,19 +289,16 @@ footer {
   .project-card {
     width: 80%;
   }
-/*
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-  span.svg {
+
+  .footer-icon {
     display: inline-flex;
+    margin-top: 12px;
   }
-  a {
+  /*a {
     display: inline-flex;
   }*/
 
-/*  span.footer-line-separator {
+  .line-footer {
       display: none;
-  }*/
+  }
 }
