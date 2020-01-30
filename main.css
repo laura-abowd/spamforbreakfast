@@ -43,6 +43,14 @@ h5 {
   letter-spacing: -1.5px;
 }
 
+h6 {
+  font-family: var(--base);
+  font-size: 16px;
+  color: var(--pink-accent);
+  word-spacing: 2px;
+  letter-spacing: -1.5px;
+}
+
 a {
   color: var(--blue-primary);
 }
@@ -50,8 +58,17 @@ a:hover {
  color: var(--blue-primary);
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cad2d7;
+  padding: 0;
+  margin: 3em 0;
+}
+
 .main-wrapper {
-  max-width: 940px;
+  max-width: 1200px;
   min-height: 100vh;
   position: relative;
 }
@@ -158,7 +175,7 @@ path.arrow-down {
 }
 
 .profile-img {
-  width: 240px;
+  width: 300px;
   border-radius: 50%;
 }
 
@@ -213,7 +230,6 @@ path.arrow-down {
   grid-column-start: span 3;
 }
 
-
 .arrow-next {
   margin-right: -100px;
 }
@@ -239,8 +255,32 @@ path.arrow-down {
   justify-items: center;
 }
 
+.technology-icons {
+  width: 40px;
+  height: 40px;
+}
+
+.view-live-btn {
+  /*color: var(--blue-primary);*/
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 40px;
+  border: 3px solid var(--blue-primary);
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.view-live-btn:hover {
+  /*background: var(--pink-accent);*/
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+}
+
 #p-container {
   padding-top: 20px;
+  text-align: center;
 }
 
 #contact-me-header {
