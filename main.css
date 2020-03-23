@@ -24,8 +24,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5{
   font-family: var(--header);
 }
 
@@ -65,6 +64,26 @@ hr {
   border-top: 1px solid #cad2d7;
   padding: 0;
   margin: 3em 0;
+}
+#avatar {
+  position: relative;
+}
+.text-popover {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  height: 50%;
+  width: 50%;
+  margin-left: 40px;
+}
+
+.popover {
+  border-color: var(--pink-accent);
+  font-family: var(--header);
+}
+
+.popover .arrow::before {
+  border-right-color: var(--pink-accent);
 }
 
 .main-wrapper {
@@ -356,7 +375,7 @@ path.arrow-down {
   grid-template-rows: 1fr 1fr auto;
   grid-row-gap: 1rem;
   justify-items: center;
- 
+
 }
 
 .teaching-bio {
