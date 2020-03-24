@@ -64,21 +64,23 @@ hr {
   padding: 0;
   margin: 3em 0;
 }
+
 #avatar {
   position: relative;
 }
+
 .text-popover {
   position: absolute;
-  left: 0;
   bottom: 20px;
   height: 50%;
-  width: 50%;
-  margin-left: 40px;
+  width: 100%;
+  margin-left: 10px;
 }
 
 .popover {
   border-color: var(--pink-accent);
   font-family: var(--header);
+  margin-left: -180px;
 }
 
 .popover .arrow::before {
