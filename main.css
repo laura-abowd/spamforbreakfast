@@ -71,16 +71,16 @@ hr {
 
 .text-popover {
   position: absolute;
+  left: 0;
   bottom: 20px;
   height: 50%;
-  width: 100%;
-  margin-left: 10px;
+  width: 50%;
+  margin-left: 40px;
 }
 
 .popover {
   border-color: var(--pink-accent);
   font-family: var(--header);
-  margin-left: -180px;
 }
 
 .popover .arrow::before {
@@ -453,6 +453,7 @@ footer {
   .content-container {
     border-radius: 0px;
   }
+
 }
 
 /*Phone styles*/
@@ -473,4 +474,5 @@ footer {
   .line-footer {
       display: none;
   }
+
 }
