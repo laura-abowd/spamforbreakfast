@@ -306,7 +306,6 @@ path.arrow-down {
 
 .project-image {
   width: 100%;
-  /* grid-column-start: span 3; */
 }
 
 .arrow-next {
@@ -404,7 +403,7 @@ footer {
 }
 
 /*Tablet styles*/
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .hero-image {
     width: 700px;
     margin-bottom: -140px;
