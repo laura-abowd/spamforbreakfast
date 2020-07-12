@@ -38,6 +38,7 @@ h2 {
 
 h5 {
   font-size: 32px;
+  font-weight: 600;
   font-family: var(--base);
   letter-spacing: -1.5px;
 }
@@ -229,6 +230,19 @@ path.arrow-down {
   align-self: start;
 }
 
+.btn__flex-container {
+  /*display: grid;
+  grid-template-columns: 1fr;*/
+}
+
+.ssp-img {
+  grid-area: sspImgs;
+}
+
+.ssp-info {
+  grid-area: sspInfo;
+}
+
 .as-img {
   grid-area: asImgs;
 }
@@ -278,6 +292,10 @@ path.arrow-down {
   grid-area: d3;
 }
 
+.d4 {
+  grid-area: d4;
+}
+
 .project-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -287,13 +305,15 @@ path.arrow-down {
   padding-bottom: 3rem;
 
   grid-template-areas:
-  "asImgs asImgs asImgs asInfo asInfo"
+  "sspImgs sspImgs sspImgs sspInfo sspInfo "
   "d1 d1 d1 d1 d1"
-  "clInfo clInfo clImgs clImgs clImgs"
+  "asImgs asImgs asImgs asInfo asInfo"
   "d2 d2 d2 d2 d2"
-  "jcImgs jcImgs jcImgs jcInfo jcInfo"
+  "clImgs clImgs clImgs clInfo clInfo "
   "d3 d3 d3 d3 d3"
-  "cbInfo cbInfo cbImgs cbImgs cbImgs"
+  "jcImgs jcImgs jcImgs jcInfo jcInfo"
+  "d4 d4 d4 d4 d4"
+  "cbImgs cbImgs cbImgs cbInfo cbInfo "
   ;
 }
 
@@ -355,6 +375,12 @@ path.arrow-down {
   background-color: var(--pink-accent);
 }
 
+.view-code-btn {
+  text-decoration: underline;
+  margin-left: 12px;
+  font-weight: 700;
+}
+
 .view-arrow {
   position: relative;
   top: 0;
@@ -365,6 +391,7 @@ path.arrow-down {
   stroke: var(--blue-primary);
   stroke-width: 2;
   transform: translateX(-5px);
+
   transition: all .3s ease;
 }
 
@@ -426,11 +453,14 @@ footer {
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 1rem;
+    /*grid-row-gap: 1rem;*/
     padding-top: 3rem;
     padding-bottom: 0rem;
+    grid-column-gap: 0rem;
 
     grid-template-areas:
+    "sspImgs"
+    "sspInfo"
     "asImgs"
     "asInfo"
     "d1"
