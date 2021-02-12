@@ -1,10 +1,10 @@
 :root {
-  --background-color: #FFF5ED;
+  --background-color: #fff5ed;
   --blue-primary: #001640;
-  --pink-accent: #FD96A0;
+  --pink-accent: #fd96a0;
   --grey-accent: rgba(200, 197, 183, 0.201);
-  --base: 'Open Sans', sans-serif;
-  --header: 'Playfair Display', serif;
+  --base: "Open Sans", sans-serif;
+  --header: "Playfair Display", serif;
 }
 
 html,
@@ -23,7 +23,7 @@ body {
 h1,
 h2,
 h3,
-h4{
+h4 {
   font-family: var(--header);
 }
 
@@ -54,7 +54,7 @@ a {
   color: var(--blue-primary);
 }
 a:hover {
- color: var(--blue-primary);
+  color: var(--blue-primary);
 }
 
 hr {
@@ -150,7 +150,6 @@ path.arrow-down {
 }
 
 @keyframes mover {
-
   20%,
   100% {
     transform: translateY(-10px);
@@ -230,9 +229,12 @@ path.arrow-down {
   align-self: start;
 }
 
-.btn__flex-container {
-  /*display: grid;
-  grid-template-columns: 1fr;*/
+.omagine-img {
+  grid-area: omagineImgs;
+}
+
+.omagine-info {
+  grid-area: omagineInfo;
 }
 
 .ssp-img {
@@ -280,6 +282,11 @@ path.arrow-down {
   border-radius: 1px;
   background-color: var(--grey-accent);
 }
+
+.d0 {
+  grid-area: d0;
+}
+
 .d1 {
   grid-area: d1;
 }
@@ -305,16 +312,17 @@ path.arrow-down {
   padding-bottom: 3rem;
 
   grid-template-areas:
-  "sspImgs sspImgs sspImgs sspInfo sspInfo "
-  "d1 d1 d1 d1 d1"
-  "asImgs asImgs asImgs asInfo asInfo"
-  "d2 d2 d2 d2 d2"
-  "clImgs clImgs clImgs clInfo clInfo "
-  "d3 d3 d3 d3 d3"
-  "jcImgs jcImgs jcImgs jcInfo jcInfo"
-  "d4 d4 d4 d4 d4"
-  "cbImgs cbImgs cbImgs cbInfo cbInfo "
-  ;
+    "omagineImgs omagineImgs omagineImgs omagineInfo omagineInfo"
+    "d0 d0 d0 d0 d0"
+    "sspImgs sspImgs sspImgs sspInfo sspInfo "
+    "d1 d1 d1 d1 d1"
+    "asImgs asImgs asImgs asInfo asInfo"
+    "d2 d2 d2 d2 d2"
+    "clImgs clImgs clImgs clInfo clInfo "
+    "d3 d3 d3 d3 d3"
+    "jcImgs jcImgs jcImgs jcInfo jcInfo"
+    "d4 d4 d4 d4 d4"
+    "cbImgs cbImgs cbImgs cbInfo cbInfo ";
 }
 
 .project-information {
@@ -392,7 +400,7 @@ path.arrow-down {
   stroke-width: 2;
   transform: translateX(-5px);
 
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .teacher-life-container {
@@ -402,7 +410,6 @@ path.arrow-down {
   grid-template-rows: 1fr 1fr auto;
   grid-row-gap: 1rem;
   justify-items: center;
-
 }
 
 .teaching-bio {
@@ -459,20 +466,22 @@ footer {
     grid-column-gap: 0rem;
 
     grid-template-areas:
-    "sspImgs"
-    "sspInfo"
-    "asImgs"
-    "asInfo"
-    "d1"
-    "clImgs"
-    "clInfo"
-    "d2"
-    "jcImgs"
-    "jcInfo"
-    "d3"
-    "cbImgs"
-    "cbInfo"
-    ;
+      "omagineImgs"
+      "omagineInfo"
+      "d0"
+      "sspImgs"
+      "sspInfo"
+      "asImgs"
+      "asInfo"
+      "d1"
+      "clImgs"
+      "clInfo"
+      "d2"
+      "jcImgs"
+      "jcInfo"
+      "d3"
+      "cbImgs"
+      "cbInfo";
   }
 
   .project-information {
@@ -482,7 +491,6 @@ footer {
   .content-container {
     border-radius: 0px;
   }
-
 }
 
 /*Phone styles*/
@@ -501,7 +509,6 @@ footer {
     margin-top: 12px;
   }
   .line-footer {
-      display: none;
+    display: none;
   }
-
 }
